@@ -74,7 +74,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main .card__container .card__img .img2 {
   display: none;
@@ -150,4 +150,4 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   padding: 10px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
