@@ -45,7 +45,7 @@
 body {
   display: flex;
   align-items: center;
-  background-color: hsl(30, 38%, 92%);
+  background-color: #000000;
   justify-content: center;
   width: 100%;
   height: 100vh;
@@ -54,23 +54,47 @@ body {
 .main {
   width: 90%;
   height: 80%;
-  border-radius: 10px;
   background-color: hsl(30, 38%, 92%);
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .main .card__container {
   display: flex;
   padding: 20px;
   width: 700px;
 }
+.main .card__container .row {
+  z-index: 200;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  top: 50%;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.main .card__container .row.left {
+  left: 20px;
+  background-color: transparent;
+  border: solid 2px white;
+  border-top: none;
+  border-right: none;
+}
+.main .card__container .row.right {
+  right: 20px;
+  background-color: transparent;
+  border: solid 2px white;
+  border-left: none;
+  border-bottom: none;
+}
 .main .card__container .card__img {
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 .main .card__container .card__img .img1 {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -82,8 +106,6 @@ body {
 .main .card__container .card__contend {
   padding: 30px;
   background-color: hsl(0, 0%, 100%);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   width: 80%;
   display: flex;
   align-items: center;
