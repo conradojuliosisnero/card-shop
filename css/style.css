@@ -54,60 +54,69 @@ body {
 .main {
   width: 90%;
   height: 80%;
-  background-color: hsl(30, 38%, 92%);
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   overflow: hidden;
 }
 .main .card__container {
   display: flex;
   padding: 20px;
   width: 700px;
+  position: relative;
 }
-.main .card__container .row {
+.main .card__container .carrusel {
+  overflow: hidden;
+  position: relative;
+  border-radius: 1em;
+  border: solid white 2px;
+}
+.main .card__container .carrusel .row {
   z-index: 200;
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   background-color: rgb(255, 255, 255);
   top: 50%;
   transform: rotate(45deg);
   cursor: pointer;
 }
-.main .card__container .row.left {
+.main .card__container .carrusel .row.left {
   left: 20px;
   background-color: transparent;
   border: solid 2px white;
   border-top: none;
   border-right: none;
 }
-.main .card__container .row.right {
+.main .card__container .carrusel .row.right {
   right: 20px;
   background-color: transparent;
   border: solid 2px white;
   border-left: none;
   border-bottom: none;
 }
-.main .card__container .card__img {
+.main .card__container .carrusel .card__img {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
   width: 100%;
+  height: 100%;
   position: relative;
-  overflow: hidden;
+  transition: transform 0.5s ease;
 }
-.main .card__container .card__img .img1 {
+.main .card__container .carrusel .card__img .img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.main .card__container .card__img .img2 {
-  display: none;
 }
 .main .card__container .card__contend {
   padding: 30px;
   background-color: hsl(0, 0%, 100%);
   width: 80%;
   display: flex;
+  visibility: hidden;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
