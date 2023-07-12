@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 <body>
@@ -14,9 +13,15 @@
   <main class="main">
     <!-- contend card  -->
     <div class="card__container">
-      <div class="card__img">
-        <img class="img1" src="images/image-product-desktop.jpg">
-        <img class="img2" src="images/image-product-mobile.jpg">
+      <div class="carrusel">
+        <span class="row right" id="flechaizquierda"></span>
+        <span class="row left" id="flechaderecha"></span>
+        <div class="card__img">
+          <img class="img" name="imagen" src="images/image-product-desktop.jpg">
+          <img class="img" name="imagen" src="images/imagen1.jpg">
+          <img class="img" name="imagen" src="images/imagen2.jpg">
+          <img class="img" name="imagen" src="images/imagen3.jpg">
+        </div>
       </div>
       <div class="card__contend">
         <div class="card__text">
@@ -34,19 +39,12 @@
         <span class="card__price-tho">$169.99</span>
       </div>
       <button class="card__btn">
-        <img src="../product-preview-card-component-main/images/icon-cart.svg" alt="">
         <span>Add to Cart</span>
       </button>
       </div>
     </div>
   </main>
-  <!-- text 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+  <script src="app/main.js"></script>
 </body>
 
 </html>
