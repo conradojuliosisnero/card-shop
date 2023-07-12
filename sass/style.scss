@@ -26,13 +26,14 @@ body{
         .carrusel{
             overflow: hidden;
             position: relative;
-            border-radius: 1em;
-            border: solid white 2px;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
             .row{
                 z-index: 200;
                 position: absolute;
-                width: 45px;
-                height: 45px;
+                width: 30px;
+                height: 30px;
                 background-color: rgb(255, 255, 255);
                 top:50%;
                 transform: rotate(45deg);
@@ -73,11 +74,11 @@ body{
             background-color: $clr-white;  
             width: 80%;
             display: flex;
-            visibility: hidden;
             align-items: center;
             justify-content: space-around;
             flex-direction: column;
-
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 30px;
             .card__text{
                 position: relative;
                 .leyend{
